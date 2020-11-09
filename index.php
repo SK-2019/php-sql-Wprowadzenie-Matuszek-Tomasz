@@ -14,8 +14,7 @@
             <a class="nav1" href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
             <a class="nav1" href="funkcjeagregujace.php">Funkcje Agregujące</a>
         </div>
-                                                        
-            <h2 class="h2za">Select count(imie) as ci, dzial, nazwa_dzial  From pracownicy, organizacja where dzial=id_org group by dzial</h2>
+    
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select count(imie) as ci, dzial, nazwa_dzial  From pracownicy, organizacja where dzial=id_org group by dzial");
