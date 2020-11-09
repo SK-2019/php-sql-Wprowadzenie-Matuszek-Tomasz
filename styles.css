@@ -46,7 +46,7 @@ a.nav1:hover{
 }
 .tekst{
     display:flex;
-    align-items: center;
+    text-align: center;
     flex-direction: column;
 }
 h3{
@@ -57,4 +57,6 @@ h3{
   border-top:2px solid purple;
   border-left:2px solid purple;
   border-right:2px solid purple;
+  text-decoration: none;
+  width: 10%
 }
