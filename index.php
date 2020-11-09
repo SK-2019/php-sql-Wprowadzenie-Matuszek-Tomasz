@@ -11,7 +11,7 @@
         <ul>
             <li><a class="active" href="">Strona główna</a></li>
             <li><a href="pracownicy.php">Pracownicy</a></li>
-            <li><a href="">Pracownicy i organizacja</a></li>
+            <li><a href="pracownicyiorganizacja.php">Pracownicy i organizacja</a></li>
             <li><a href="funkcjeagregujace.php">Funkcje Agregujące</a></li>
         </ul>
             
