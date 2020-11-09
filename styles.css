@@ -10,9 +10,13 @@ body{
 }
 
 #navigator{
-  max-width: 101%;
+  max-width: 1000px;
   margin: 0 auto;
   background: white;
+}
+header{
+  width: 100%
+  display: block;
 }
 nav{
   background-color: darkcyan;
