@@ -19,8 +19,8 @@
             <a class="nav1" href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
             <a class="nav1" href="funkcjeagregujace.php">Funkcje Agregujące</a>
                 </nav>
-        <div class="pracow>
            <h2 class="h2za">Zad.1 - Select * FROM pracownicy WHERE dzial=2</h2>
+               <div class="pracow>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy where dzial=2");
@@ -37,7 +37,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-          <h2 class="h2zb">Zad.2 - Select * FROM pracownicy WHERE dzial=2 AND dzial=3</h2>
+          <h2 class="h2zb">Zad.2 - Select * FROM pracownicy WHERE (dzial=2 OR dzial=3)</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy where dzial=2 AND dzial=3");
@@ -57,7 +57,7 @@
             <h2 class="h2zc">Zad.3 - Select * FROM pracownicy WHERE zarobki<30</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("Select * From pracownicy where dzial=2");
+                $result=$conn->query("Select * FROM pracownicy WHERE zarobki<30");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
                     echo("<th>Imie</th>");
