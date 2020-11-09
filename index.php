@@ -8,12 +8,12 @@
 </head>
 <body>
     <a href="https://github.com/SK-2019/php-sql-Wprowadzenie-Matuszek-Tomasz">GITHUB</a>
-        <div class="nav">
-         <a class="navlink" href="pracownicy.php">Pracownicy</a>
-         <a class="navlink" href="funkcjeagregujace.php">Funkcje Agregujące</a>
-            <a class="navlink" href="organizacja.php">Organizacja</a>
-            <a class="navlink" href="matuszek.php">Matuszek</a> 
-        </div>
+        <ul>
+            <li><a class="active" href="">Strona główna</a></li>
+            <li><a href="pracownicy.php">Pracownicy</a></li>
+            <li><a href="">Pracownicy i organizacja</a></li>
+            <li><a href="funkcjeagregujace.php">Funkcje Agregujące</a></li>
+        </ul>
             
    
             <h2 class="h2za">Select count(imie) as ci, dzial, nazwa_dzial  From pracownicy, organizacja where dzial=id_org group by dzial</h2>
