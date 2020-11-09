@@ -9,11 +9,13 @@
 <body>
     <h3><a href="https://github.com/SK-2019/PHP-SQL-Wprowadzenie-Matuszek-Tomasz">GITHUB</h3>
         <header>
-           <div class="nav>
+           <div class="navigator">
+                 <nav>
             <a class="nav1 active" href="index.php">Strona główna</a>
             <a class="nav1" href="pracownicy.php">Pracownicy</a>
             <a class="nav1" href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
             <a class="nav1" href="funkcjeagregujace.php">Funkcje Agregujące</a>
+                </nav>
            </div>
        </header>
     </body>
