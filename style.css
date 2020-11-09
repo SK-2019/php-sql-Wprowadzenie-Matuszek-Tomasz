@@ -59,6 +59,19 @@ a.nav1 {
 a.nav1:hover{
   background-color: crimson;
 }
+a.nav2 {
+  display: inline-block;
+  justify-content: center;
+  width: 24%;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border:2px solid black;
+}
+a.nav2:hover{
+  background-color: Orange;
+}
 .active {
       background-color: crimson;
 }
