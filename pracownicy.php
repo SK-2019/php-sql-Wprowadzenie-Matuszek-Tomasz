@@ -39,6 +39,7 @@ echo("<li> SELECT * FROM pracownicy WHERE dzial=2</li>");
 		echo("</tr>");
 		}
 	?>
+	echo("</table>")
 
 	<?php
 echo("<li> SELECT * FROM pracownicy WHERE dzial=2 AND dzial=3</li>");
@@ -72,4 +73,5 @@ echo("<li> SELECT * FROM pracownicy WHERE zarobki<30</li>");
 		echo("</tr>");
 		}
 	?>
+	echo("</table>")
 </body>
