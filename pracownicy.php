@@ -19,6 +19,8 @@
             <a class="nav1" href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
             <a class="nav1" href="funkcjeagregujace.php">Funkcje Agregujące</a>
                 </nav>
+              </div>
+               <div class="pracow">
            <h2 class="h2za">Zad.1 - Select * FROM pracownicy WHERE dzial=2</h2>
         <?php
                 require_once("connect.php");
@@ -70,6 +72,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
+                </div>
            </div>
       </body>
 </html>
