@@ -32,3 +32,6 @@ a.nav1 {
 a.nav1:hover{
   background-color: crimson;
 }
+.active {
+      background-color: crimson;
+}
