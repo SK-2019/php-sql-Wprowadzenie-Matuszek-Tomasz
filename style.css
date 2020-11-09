@@ -1,25 +1,25 @@
-* {
+*{
   margin: 0;
   padding: 0;
   font-family: Calibri, Open-Sans;
   box-sizing: border-box;
 }
 
-body {
+body{
   background-color: #FFDAB9;
 }
 
-#nav {
+#nav{
   max-width: 1000px;
   margin: 0 auto 0 auto;
   background-color: white;
 }
 
-nav {
+nav{
   background-color: darkcyan;
 }
 
-a.nav1 {
+a.nav1{
   display: inline-block;
   width: 20%;
   padding: 15px 30px;
@@ -28,6 +28,6 @@ a.nav1 {
   text-align: center;
 }
 
-a.nav1:hover {
+a.nav1:hover{
   background-color: crimson;
 }
