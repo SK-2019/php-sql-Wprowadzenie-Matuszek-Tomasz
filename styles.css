@@ -19,8 +19,7 @@ header{
   background-color: white;
 }
 .navigator{
-  height:100vh;
-  position: relative;
+  position: center;
 }
 
 nav{
