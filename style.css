@@ -53,7 +53,7 @@ a.nav1:hover{
 }
 h3{
   display: flex;
-  text-align: center;
+  position: center;
   border:2px solid purple;
   text-decoration: none;
 }
