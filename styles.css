@@ -36,5 +36,6 @@ a.nav1:hover{
       background-color: crimson;
 }
 .h2{
-  text-align: center;
+  justify-content: center;
 }
+
