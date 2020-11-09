@@ -18,6 +18,12 @@
             <a class="nav1" href="pracownicy.php">Pracownicy</a>
             <a class="nav1" href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
             <a class="nav1 active" href="funkcjeagregujace.php">Funkcje Agregujące</a>
+                    <div class="orga1">
+            <a class="nav2" href="pracownicyiorganizacja.php">Funkcje</a>
+            <a class="nav2" href="pracownicyiorganizacja.php">Group By</a>
+            <a class="nav2" href="pracownicyiorganizacja.php">Having By</a>
+            <a class="nav2" href="pracownicyiorganizacja.php">Data i Czas</a>
+                    </div>
                 </nav>
            </div>
       </body>
