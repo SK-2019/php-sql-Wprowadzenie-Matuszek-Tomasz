@@ -13,11 +13,11 @@ header{
   display: block;
 }
 
-#tomek{
+.tomek{
   height:100vh;
   position: relative;
 }
-#navigator{
+.navigator{
   max-width: 1000px;
   margin: 0 auto;
   background: white;
