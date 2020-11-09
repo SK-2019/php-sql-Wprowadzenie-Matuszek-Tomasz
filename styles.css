@@ -58,4 +58,5 @@ h3{
   border-left:2px solid purple;
   border-right:2px solid purple;
   text-decoration: none;
+  display: inline-block
 }
