@@ -19,9 +19,9 @@
             <a class="nav1 active" href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
             <a class="nav1" href="funkcjeagregujace.php">Funkcje Agregujące</a>
                     <div class="orga">
+            <a class="nav2" href="pracownicyiorganizacja.php">Organizacja</a>
             <a class="nav2" href="pracownicyiorganizacja.php">Sortowanie</a>
-            <a class="nav2" href="pracownicyiorganizacja.php">Group By</a>
-            <a class="nav2" href="pracownicyiorganizacja.php">Having By</a>
+            <a class="nav2" href="pracownicyiorganizacja.php">Limit</a>
                     </div>
                 </nav>
            </div>
