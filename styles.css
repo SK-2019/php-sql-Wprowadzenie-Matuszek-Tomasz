@@ -14,3 +14,17 @@ body{
   margin: 0 auto;
   background: white;
 }
+nav{
+  background-color: darkcyan;
+}
+a.nav1 {
+  display: inline-block;
+  width: 25%;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+a.nav1:hover{
+  background-color: crimson;
+}
