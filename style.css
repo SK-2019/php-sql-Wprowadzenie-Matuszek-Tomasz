@@ -28,8 +28,10 @@ header{
 .pracow{
   text-align: center;
   justify-content: center;
-  display: inline-block;
   position: center;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .navigator{
