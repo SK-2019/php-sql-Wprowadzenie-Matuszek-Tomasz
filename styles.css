@@ -21,7 +21,9 @@ header{
 .navigator{
   position: center;
 }
-
+.h2tm{
+  background-color: purple;
+}
 nav{
   background-color: darkcyan;
 }
