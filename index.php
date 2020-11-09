@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3><a href="https://github.com/SK-2019/PHP-SQL-Wprowadzenie-Matuszek-Tomasz">GITHUB</h3>
         <header>
           <div class="tomek">
            <div class="navigator">
+               <h3><a href="https://github.com/SK-2019/PHP-SQL-Wprowadzenie-Matuszek-Tomasz">GITHUB</h3>
                  <nav>
             <a class="nav1 active" href="index.php">Strona główna</a>
             <a class="nav1" href="pracownicy.php">Pracownicy</a>
