@@ -8,7 +8,7 @@
 </head>
 <body>
         <div class="nav">
-                <a class="nav1 href="https://github.com/SK-2019/php-sql-Wprowadzenie-Matuszek-Tomasz">GITHUB</a>
+            <a class="nav1" href="https://github.com/SK-2019/php-sql-Wprowadzenie-Matuszek-Tomasz">GITHUB</a>
             <a class="nav2" href="index.php">Strona główna</a>
             <a class="nav3" href="pracownicy.php">Pracownicy</a>
             <a class="nav4" href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
