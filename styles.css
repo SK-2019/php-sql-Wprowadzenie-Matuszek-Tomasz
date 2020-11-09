@@ -39,6 +39,11 @@ a.nav1:hover{
 .active {
       background-color: crimson;
 }
+.tekst{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
 .h2{
   justify-content: center;
   height:100vh;
