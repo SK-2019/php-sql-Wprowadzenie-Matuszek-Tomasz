@@ -22,7 +22,7 @@ header{
   position: center;
 }
 .h2tm{
-  background-color: #ff99ff;
+  background-color: #00e6ac;
   color: white;
   padding: 7px;
   text-align: center;
@@ -52,8 +52,8 @@ a.nav1:hover{
     flex-direction: column;
 }
 h3{
+  display: flex;
   text-align: center;
   border:2px solid purple;
   text-decoration: none;
-  display: inline-block;
 }
