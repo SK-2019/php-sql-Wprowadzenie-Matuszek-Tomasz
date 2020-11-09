@@ -24,7 +24,7 @@
            <h2 class="h2za">Zad.1 - SELECT * FROM pracownicy WHERE dzial=2</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("Select * From pracownicy WHERE dzial=2");
+                $result=$conn->query("Select * From pracownicy WHERE (dzial=2 or dzial=3)");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
                     echo("<th>Imie</th>");
