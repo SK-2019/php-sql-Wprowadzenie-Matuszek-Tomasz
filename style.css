@@ -52,8 +52,10 @@ a.nav1:hover{
     flex-direction: column;
 }
 h3{
-  display: flex;
+  justify-content: center;
+  display: inline-block;
   position: center;
   border:2px solid purple;
   text-decoration: none;
+  text-align: center;
 }
