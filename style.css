@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, Open-Sans;
+  box-sizing: border-box;
+}
+
 body {
   background-color: red;
 }
@@ -8,7 +15,7 @@ body {
   background-color: white;
 }
 
-nav {
+nav1 {
   background-color: darkcyan;
 }
 
