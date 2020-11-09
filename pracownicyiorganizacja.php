@@ -24,7 +24,8 @@
             <a class="nav2" href="pracownicyiorganizacja.php">Limit</a>
                     </div>
                 </nav>
-               <h2 class="h2za">Select * From pracownicy, organizacja where dzial=id_org</h2>
+                    <div class="pracow">
+               <h2 class="h2za">Zad.1 - Select * From pracownicy, organizacja where dzial=id_org</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org");
@@ -42,9 +43,7 @@
                 echo("</table>");
 
         ?>
-        </div>
-        <div class="item b">
-            <h2 class="h2zb">Select * From pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=4)</h2>
+            <h2 class="h2zb">Zad.2 - Select * From pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=4)</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=4)");
@@ -61,9 +60,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-        </div>
-        <div class="item c">
-            <h2 class=h2zc>Select * From pracownicy, organizacja where dzial=id_org and imie like '%a'</h2>
+            <h2 class=h2zc>Zad.3 - Select * From pracownicy, organizacja where dzial=id_org and imie like '%a'</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie like '%a'");
@@ -80,9 +77,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-        </div>
-        <div class="item d">
-            <h2>Select * From pracownicy, organizacja where dzial=id_org and imie not like '%a'</h2>
+            <h2 class="h2zd">Zad.4 - Select * From pracownicy, organizacja where dzial=id_org and imie not like '%a'</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie not like '%a'");
@@ -99,8 +94,6 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-        </div>
-        <div class="item e">
         <h1 id="2">Order By</h1>
             <h2>Select * From pracownicy, organizacja where dzial=id_org order by imie desc</h2>
         <?php
@@ -138,6 +131,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
+               </div>
            </div>      
       </body>
 </html>
