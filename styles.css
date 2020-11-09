@@ -15,7 +15,7 @@ body{
   background: white;
 }
 header{
-  width: 100%
+  width: 100%;
   display: block;
 }
 nav{
@@ -28,6 +28,10 @@ a.nav1 {
   color: white;
   text-decoration: none;
   text-align: center;
+  border-bottom:1px solid black;
+  border-top:1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 a.nav1:hover{
   background-color: crimson;
