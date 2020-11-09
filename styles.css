@@ -14,13 +14,13 @@ header{
 }
 
 .tomek{
-  height:100vh;
-  position: relative;
-}
-.navigator{
   max-width: 1000px;
   margin: 0 auto;
   background-color: white;
+}
+.navigator{
+  height:100vh;
+  position: relative;
 }
 
 nav{
