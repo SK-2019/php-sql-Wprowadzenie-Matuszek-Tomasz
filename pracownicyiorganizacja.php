@@ -25,6 +25,7 @@
                     </div>
                 </nav>
                     <div class="pracow">
+                        <h2 class="h2gl">Organizacja</h2>
                <h2 class="h2za">Zad.1 - Select * From pracownicy, organizacja where dzial=id_org</h2>
         <?php
                 require_once("connect.php");
@@ -94,7 +95,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-        <h1 id="2">Order By</h1>
+                <h2 class="h2gl">Order By</h2>
             <h2>Select * From pracownicy, organizacja where dzial=id_org order by imie desc</h2>
         <?php
                 require_once("connect.php");
