@@ -22,8 +22,10 @@ header{
   position: center;
 }
 .h2tm{
-  background-color: purple;
+  background-color: dakgrey;
+  text-decoration: white;
   text-align: center;
+  padding: 10 0;
 }
 nav{
   background-color: darkcyan;
