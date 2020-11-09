@@ -62,8 +62,8 @@ a.nav1:hover{
 a.nav2 {
   display: inline-block;
   justify-content: center;
-  width: 24%;
-  padding: 15px 25px;
+  width: 35%;
+  padding: 10px 15px;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -71,6 +71,9 @@ a.nav2 {
 }
 a.nav2:hover{
   background-color: Orange;
+}
+.orga{
+  background-color: black;  
 }
 .active {
       background-color: crimson;
