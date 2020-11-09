@@ -74,3 +74,11 @@ h3{
   background-color: #00cc99;
   color: purple;
 }
+footer{
+  height: 40px;
+  background-color: darkcyan;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 10px;
+}
