@@ -9,8 +9,10 @@ body {
   background: #ddb;
 }
 
-#nav {
-  background-color: darkcyan;
+#gg {
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
+  background-color: white;
 }
 
 a.nav1 {
