@@ -9,7 +9,7 @@
 <body>
     <a href="https://github.com/SK-2019/php-sql-Wprowadzenie-Matuszek-Tomasz">GITHUB</a>
         <ul>
-            <li><a class="active" href="">Strona główna</a></li>
+            <li><a class="active" href="index.php">Strona główna</a></li>
             <li><a href="pracownicy.php">Pracownicy</a></li>
             <li><a href="pracownicyiorganizacja.php">Pracownicy i organizacja</a></li>
             <li><a href="funkcjeagregujace.php">Funkcje Agregujące</a></li>
