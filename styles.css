@@ -38,10 +38,7 @@ a.nav1 {
   color: white;
   text-decoration: none;
   text-align: center;
-  border-bottom:2px solid black;
-  border-top:2px solid black;
-  border-left:2px solid black;
-  border-right:2px solid black;
+  border:2px solid black;
 }
 a.nav1:hover{
   background-color: crimson;
@@ -56,10 +53,7 @@ a.nav1:hover{
 }
 h3{
   text-align: center;
-  border-bottom:2px solid purple;
-  border-top:2px solid purple;
-  border-left:2px solid purple;
-  border-right:2px solid purple;
+  border:2px solid purple;
   text-decoration: none;
   display: inline-block;
 }
