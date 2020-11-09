@@ -8,14 +8,14 @@
 </head>
 <body>
     <a href="https://github.com/SK-2019/php-sql-Wprowadzenie-Matuszek-Tomasz">GITHUB</a>
-        <div class="nav>
+        <div class="nav">
             <a class="nav1" href="index.php">Strona główna</a>
             <a class="nav2" href="pracownicy.php">Pracownicy</a>
             <a class="nav3" href="pracownicyiorganizacja.php">Pracownicy i organizacja</a>
             <a class="nav4" href="funkcjeagregujace.php">Funkcje Agregujące</a>
         </div>
             
-   s
+ 
             <h2 class="h2za">Select count(imie) as ci, dzial, nazwa_dzial  From pracownicy, organizacja where dzial=id_org group by dzial</h2>
         <?php
                 require_once("connect.php");
