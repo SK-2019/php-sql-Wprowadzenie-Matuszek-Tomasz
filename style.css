@@ -12,6 +12,12 @@ header{
   width: 100%;
   display: block;
 }
+.git{
+  justify-content: center;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
 
 .tomek{
   max-width: 1000px;
