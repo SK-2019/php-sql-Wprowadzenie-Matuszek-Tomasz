@@ -1,5 +1,4 @@
-<body>
-   <?php
-	require_once('connect.php');
-   ?>
-</body>
+<?php
+echo("tu jestem: Organizacja");
+
+?>
