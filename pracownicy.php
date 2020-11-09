@@ -20,7 +20,6 @@
             <a class="nav1" href="funkcjeagregujace.php">Funkcje Agregujące</a>
                 </nav>
            <h2 class="h2za">Zad.1 - Select * FROM pracownicy WHERE dzial=2</h2>
-               <div class="pracow>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy where dzial=2");
@@ -71,7 +70,6 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-            </div>
            </div>
       </body>
 </html>
