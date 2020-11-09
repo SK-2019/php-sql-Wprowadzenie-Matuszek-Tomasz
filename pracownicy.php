@@ -2,10 +2,6 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="nav">
-         <a class="nav2" href="index.php">Strona główna</a>
-	</div>
-            <h2>Pracownicy</h2>
    <?php
 	require_once('connect.php');
 echo("<li>"SELECT * FROM pracownicy"</li>");
