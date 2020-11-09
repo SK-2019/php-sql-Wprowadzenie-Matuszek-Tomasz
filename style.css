@@ -26,7 +26,10 @@ header{
   background-color: white;
 }
 .pracow{
-text-align: center;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  position: center;
 }
 
 .navigator{
