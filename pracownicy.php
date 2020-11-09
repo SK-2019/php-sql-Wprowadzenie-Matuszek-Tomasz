@@ -33,14 +33,14 @@
                     echo("<th>Data_Urodzenia</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
-                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
                             echo("</tr>");}
                 echo("</table>");
             ?>
           <h2 class="h2zb">Zad.2 - SELECT * FROM pracownicy WHERE (dzial=2 OR dzial=3)</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("SELECT * FROM pracownicy WHERE (dzial=2 AND dzial=3)");
+                $result=$conn->query("SELECT * FROM pracownicy");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
                     echo("<th>Imie</th>");
@@ -49,7 +49,7 @@
                     echo("<th>Data_Urodzenia</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
-                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
                             echo("</tr>");}
                 echo("</table>");
             ?>
@@ -65,7 +65,7 @@
                     echo("<th>Data_Urodzenia</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
-                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
                             echo("</tr>");}
                 echo("</table>");
             ?>
