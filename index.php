@@ -9,8 +9,8 @@
 <body>
     <h3><a href="https://github.com/SK-2019/PHP-SQL-Wprowadzenie-Matuszek-Tomasz">GITHUB</h3>
         <header>
-          <div id="tomek">
-           <div id="navigator">
+          <div class="tomek">
+           <div class="navigator">
                  <nav>
             <a class="nav1 active" href="index.php">Strona główna</a>
             <a class="nav1" href="pracownicy.php">Pracownicy</a>
@@ -81,7 +81,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-            </div>
+           </div>
        </header>
     </body>
 </html>
