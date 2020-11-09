@@ -86,7 +86,7 @@
               <h2 class=h2ze>Zad 5 Select * From pracownicy where zarobki>15 and (dzial=1 or dzial=4)</h2>
           <?php
                 require_once("connect.php");
-                $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org AND zarobki>15 OR dzial=1 AND dzial=2");
+                $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and zarobki>15 OR (dzial=1 AND dzial=2)");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
                     echo("<th>Imie</th>");
