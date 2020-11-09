@@ -51,6 +51,6 @@ a.nav1:hover{
 }
 h3{
   justify-content: center;
-  height:100vh;
   position: relative;
+  text-align: center;
 }
