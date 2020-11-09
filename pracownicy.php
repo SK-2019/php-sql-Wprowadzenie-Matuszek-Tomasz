@@ -3,7 +3,7 @@
 </head>
 <body>
         <div class="nav">
-         <a class="navlink" href="index.php">Strona główna</a>
+         <a class="nav2" href="index.php">Strona główna</a>
 	</div>
             <h2>Pracownicy</h2>
    <?php
