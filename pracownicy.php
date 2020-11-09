@@ -41,7 +41,7 @@
           <h2 class="h2zb">Zad.2 - Select * FROM pracownicy WHERE (dzial=2 OR dzial=3)</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("Select * From pracownicy where dzial=2 AND dzial=3");
+                $result=$conn->query("Select * From pracownicy where (dzial=2 AND dzial=3)");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
                     echo("<th>Imie</th>");
