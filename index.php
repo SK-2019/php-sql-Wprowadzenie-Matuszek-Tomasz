@@ -21,6 +21,7 @@
                 </nav>
            </div>
             <h2 class="h2tm">Tomasz Matuszek</h2>
+              <div class="pracow">
                 <h2 class="h2za">Zad 2 Select * From pracownicy where imie like '%a' and dzial between 2 and 4</h2>
             <?php
                 require_once("connect.php");
@@ -100,6 +101,7 @@
                             echo("</tr>");}
                 echo("</table>");
           ?>
+              </div>
            </div>
        </header>
     </body>
