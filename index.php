@@ -17,7 +17,7 @@
             <a class="nav1" href="funkcjeagregujace.php">Funkcje Agregujące</a>
                 </nav>
            </div>
-            
+                <h2 class="h2za">Zad 2 Select * From pracownicy where imie like '%a' and dzial between 2 and 4</h2>
             <?php
                 require_once("connect.php");
                 $result=$conn->query("Select count(imie) as ci, dzial, nazwa_dzial  From pracownicy, organizacja where dzial=id_org group by dzial");
@@ -62,7 +62,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-            <h2>Zad 4 Select * From pracownicy where imie not like '%a' and zarobki between 15 and 50</h2>
+            <h2 class=h2zd>Zad 4 Select * From pracownicy where imie not like '%a' and zarobki between 15 and 50</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie not like '%a' and zarobki between 15 and 50");
