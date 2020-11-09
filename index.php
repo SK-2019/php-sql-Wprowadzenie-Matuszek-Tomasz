@@ -16,6 +16,5 @@
             <a class="nav1" href="funkcjeagregujace.php">Funkcje Agregujące</a>
         </nav>
     </div>
-
-    </body>
+</body>
 </html>
