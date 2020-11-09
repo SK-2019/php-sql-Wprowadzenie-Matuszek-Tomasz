@@ -8,6 +8,7 @@
 </head>
 <body>
     <a href="https://github.com/SK-2019/php-sql-Wprowadzenie-Matuszek-Tomasz">GITHUB</a>
+    <h1>Tomemd</h1>
         <ul>
             <li><a class="active" href="index.php">Strona główna</a></li>
             <li><a href="pracownicy.php">Pracownicy</a></li>
