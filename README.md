@@ -1,2 +1,2 @@
 # PHP-SQL-wprowadzenie-Matuszek Tomasz
-https://matuch.herokuapp.com
+https://matuch1.herokuapp.com
