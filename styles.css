@@ -16,11 +16,11 @@ header{
 .tomek{
   height:100vh;
   position: relative;
+  background-color: white;
 }
 .navigator{
   max-width: 1000px;
   margin: 0 auto;
-  background-color: white;
 }
 
 nav{
