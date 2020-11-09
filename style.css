@@ -25,7 +25,7 @@ header{
   background-color: blue;
   text-decoration: white;
   padding: 10;
-  position: center;
+  text-align: center;
 }
 nav{
   background-color: darkcyan;
