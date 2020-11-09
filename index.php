@@ -15,7 +15,7 @@
             <a class="nav4" href="funkcjeagregujace.php">Funkcje Agregujące</a>
         </div>
             
-   
+   s
             <h2 class="h2za">Select count(imie) as ci, dzial, nazwa_dzial  From pracownicy, organizacja where dzial=id_org group by dzial</h2>
         <?php
                 require_once("connect.php");
