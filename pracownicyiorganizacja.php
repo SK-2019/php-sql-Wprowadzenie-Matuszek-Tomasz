@@ -24,6 +24,120 @@
             <a class="nav2" href="pracownicyiorganizacja.php">Limit</a>
                     </div>
                 </nav>
-           </div>
+               <h2 class="h2za">Select * From pracownicy, organizacja where dzial=id_org</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+
+        ?>
+        </div>
+        <div class="item b">
+            <h2 class="h2zb">Select * From pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=4)</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=4)");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+            ?>
+        </div>
+        <div class="item c">
+            <h2 class=h2zc>Select * From pracownicy, organizacja where dzial=id_org and imie like '%a'</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie like '%a'");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+            ?>
+        </div>
+        <div class="item d">
+            <h2>Select * From pracownicy, organizacja where dzial=id_org and imie not like '%a'</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie not like '%a'");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+            ?>
+        </div>
+        <div class="item e">
+        <h1 id="2">Order By</h1>
+            <h2>Select * From pracownicy, organizacja where dzial=id_org order by imie desc</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org order by imie desc");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+            ?>
+        </div>
+        <div class="item f">
+            <h2>Select * From pracownicy, organizacja where dzial=id_org and dzial=3 order by imie asc</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and dzial=3 order by imie asc");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+            ?>
+           </div>      
       </body>
 </html>
