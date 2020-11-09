@@ -17,9 +17,7 @@ body{
   margin: 0 auto;
   background: white;
 }
-header{
-  width: 100%;
-  display: block;
+
 }
 nav{
   background-color: darkcyan;
