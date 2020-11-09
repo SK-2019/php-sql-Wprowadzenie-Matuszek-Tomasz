@@ -24,7 +24,7 @@
            <h2 class="h2za">Zad.1 - SELECT * FROM pracownicy WHERE dzial=2</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org AND dzial=2");
+                $result=$conn->query("Select * From pracownicy, organizacja where nazwa_dzial=id_org AND dzial=2");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
                     echo("<th>Imie</th>");
@@ -41,7 +41,7 @@
           <h2 class="h2zb">Zad.2 - SELECT * FROM pracownicy WHERE (dzial=2 OR dzial=3)</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org AND (dzial=2 OR dzial=3)");
+                $result=$conn->query("Select * From pracownicy, organizacja where nazwa_dzial=id_org AND (dzial=2 OR dzial=3)");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
                     echo("<th>Imie</th>");
@@ -58,7 +58,7 @@
             <h2 class="h2zc">Zad.3 - SELECT * FROM pracownicy WHERE zarobki<30</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("Select * From pracownicy, organizacja WHERE dzial=id_org AND zarobki<30");
+                $result=$conn->query("Select * From pracownicy, organizacja WHERE nazwa_dzial=id_org AND zarobki<30");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
                     echo("<th>Imie</th>");
