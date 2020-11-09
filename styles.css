@@ -8,7 +8,10 @@
 body{
   background-color: grey;
 }
-
+#tomek{
+  height:100vh;
+  position: relative;
+}
 #navigator{
   max-width: 1000px;
   margin: 0 auto;
