@@ -20,3 +20,7 @@ a.nav1 {
       color: white;
       text-decoration: none;
       text-align: center;
+  
+.active {
+      background-color: crimson;
+}
