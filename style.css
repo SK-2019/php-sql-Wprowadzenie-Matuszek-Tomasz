@@ -72,7 +72,23 @@ a.nav2 {
 a.nav2:hover{
   background-color: Orange;
 }
+a.nav3 {
+  display: inline-block;
+  justify-content: center;
+  width: 25%;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border:2px solid black;
+}
+a.nav2:hover{
+  background-color: Orange;
+}
 .orga{
+  background-color: black;  
+}
+.orga1{
   background-color: black;  
 }
 .active {
