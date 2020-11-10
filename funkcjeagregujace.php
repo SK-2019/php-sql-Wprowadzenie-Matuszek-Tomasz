@@ -124,10 +124,10 @@
                 echo("</table>");
         ?>                    
              <h2 class="h2gl">GROUP BY</h2>
-        <h2 class="h2za">SELECT sum(zarobki),nazwa_dzial FROM pracownicy,organizacja WHERE dzial = id_org GROUP BY dzial</h2>
+        <h2 class="h2za">SELECT sum(zarobki),nazwa_dzial as es FROM pracownicy,organizacja WHERE dzial=id_org GROUP BY dzial</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("SELECT sum(zarobki),nazwa_dzial FROM pracownicy,organizacja WHERE dzial = id_org GROUP BY dzial");
+                $result=$conn->query("SELECT sum(zarobki),nazwa_dzial as es FROM pracownicy,organizacja WHERE dzial=id_org GROUP BY dzial");
                 echo("<table border=1>");
                     echo("<th>sum(zarobki)</th>");
                     echo("<th>nazwa_dzial</th>");
