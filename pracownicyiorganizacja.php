@@ -216,7 +216,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>     
-                  <h2 class="h2zl">SELECT * FROM pracownicy, organizacja WHERE dzial=id_org AND (dzial=2 or dzial=4) OR imie not like "%a" ORDER BY zarobki desc limit 3</h2>
+                  <h2 class="h2zl">SELECT * FROM pracownicy, organizacja WHERE dzial=id_org AND imie LIKE '%a' AND (dzial=2 or dzial=4) ORDER BY zarobki desc limit 3</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("SELECT * FROM pracownicy, organizacja WHERE dzial=id_org AND imie LIKE '%a' AND (dzial=2 or dzial=4) ORDER BY zarobki desc limit 3");
@@ -232,7 +232,24 @@
                             echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
                             echo("</tr>");}
                 echo("</table>");
-            ?>                         
+            ?> 
+                  <h2 class="h2zm">PRACOWNICY * FROM pracownicy, organizacja WHERE dzial=id_org ORDER BY data_urodzenia asc limit 1</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org order by data_urodzenia asc limit 1");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+            ?>                        
                </div>
            </div>
        </div>      
