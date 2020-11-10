@@ -25,6 +25,19 @@
             <a class="nav3" href="funkcjeagregujace.php">Data i Czas</a>
                     </div>
                 </nav>
+                <h2 class="h2za">SELECT sum(zarobki) as es FROM pracownicy</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select sum(zarobki) as es from pracownicy");
+                echo("<table border=1>");
+                    echo("<th>Sum(zarobki)</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["es"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>           
+               
                <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
            </div>
       </body>
