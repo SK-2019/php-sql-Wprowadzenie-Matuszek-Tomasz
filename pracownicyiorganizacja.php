@@ -251,7 +251,8 @@
                 echo("</table>");
             ?>                        
                </div>
-           </div>
+               <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
+            </div>
        </div>      
       </body>
 </html>
