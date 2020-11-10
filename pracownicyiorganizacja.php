@@ -113,9 +113,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-        </div>
-        <div class="item f">
-            <h2>Select * From pracownicy, organizacja where dzial=id_org and dzial=3 order by imie asc</h2>
+            <h2 class="h2gl">Select * From pracownicy, organizacja where dzial=id_org and dzial=3 order by imie asc</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and dzial=3 order by imie asc");
@@ -132,7 +130,59 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
+            <h2 class="h2gl">SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' order by imie asc</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' order by imie asc");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+            ?>
+                <h2 class="h2gl">SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' and (dzial = 1 OR dzial=3) order by zarobki asc</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' and (dzial = 1 OR dzial=3) order by zarobki asc");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+            ?>
+                <h2 class="h2gl">SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' order by  nazwa_dzial asc, zarobki asc</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' order by  nazwa_dzial asc, zarobki asc");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+            ?>                         
                </div>
-           </div>      
+           </div>
+       </div>      
       </body>
 </html>
