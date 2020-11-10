@@ -51,6 +51,7 @@ header{
   color: white;
   padding: 7px;
   text-align: center;
+  border-bottom:1px purple;
 }
 nav{
   background-color: darkcyan;
