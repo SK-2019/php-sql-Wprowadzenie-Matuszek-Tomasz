@@ -123,6 +123,7 @@
                             echo("</tr>");}
                 echo("</table>");
         ?>                    
+             <h2 class="h2gl">GROUP BY</h2>       
                </div>
              <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
            </div>
