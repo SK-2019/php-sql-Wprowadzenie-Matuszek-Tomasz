@@ -25,6 +25,7 @@
             <a class="nav3" href="funkcjeagregujace.php">Data i Czas</a>
                     </div>
                 </nav>
+                <div class="pracow">
                 <h2 class="h2za">SELECT sum(zarobki) as es FROM pracownicy</h2>
         <?php
                 require_once("connect.php");
@@ -37,8 +38,8 @@
                             echo("</tr>");}
                 echo("</table>");
         ?>           
-               
-               <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
+               </div>
+             <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
            </div>
       </body>
 </html>
