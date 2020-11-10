@@ -202,7 +202,7 @@
                   <h2 class="h2zj">SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' order by  nazwa_dzial asc, zarobki asc</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("SELECT * FROM pracownicy,organizacja WHERE id_org=dzial AND dzial=4 ORDER BY zarobki asc LIMIT 2");
+                $result=$conn->query("SELECT * FROM pracownicy,organizacja WHERE id_org=dzial AND dzial=4 ORDER BY zarobki asc LIMIT 2 LIMIT 2");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
                     echo("<th>Imie</th>");
