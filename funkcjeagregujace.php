@@ -98,6 +98,30 @@
                             echo("<td>".$row["es"]."</td>");
                             echo("</tr>");}
                 echo("</table>");
+        ?>
+        <h2 class="h2za">SELECT count(imie) as es FROM pracownicy</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("SELECT count(imie) as es FROM pracownicy");
+                echo("<table border=1>");
+                    echo("<th>count(imie)</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["es"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>
+        <h2 class="h2za">SELECT count(imie) FROM pracownicy WHERE imie LIKE '%a' AND (dzial=1 or dzial=3)</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("SELECT COUNT(imie) FROM pracownicy WHERE imie LIKE '%a' AND (dzial=1 or dzial=3)");
+                echo("<table border=1>");
+                    echo("<th>count(imie)</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["es"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
         ?>                    
                </div>
              <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
