@@ -38,7 +38,31 @@
                             echo("<td>".$row["es"]."</td>");
                             echo("</tr>");}
                 echo("</table>");
-        ?>           
+        ?>         
+                <h2 class="h2za">SELECT sum(zarobki) as es FROM pracownicy WHERE imie like '%a'</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select sum(zarobki) as es from pracownicy WHERE imie like '%a'");
+                echo("<table border=1>");
+                    echo("<th>Sum(zarobki)</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["es"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>
+           <h2 class="h2za">SELECT sum(zarobki) as es FROM pracownicy</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select sum(zarobki) as es from pracownicy WHERE imie not like '%a' AND (dzial=2 or dzial=3)");
+                echo("<table border=1>");
+                    echo("<th>Sum(zarobki)</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["es"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>
                </div>
              <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
            </div>
