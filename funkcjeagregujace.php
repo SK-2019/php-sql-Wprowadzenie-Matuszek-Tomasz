@@ -111,10 +111,10 @@
                             echo("</tr>");}
                 echo("</table>");
         ?>
-        <h2 class="h2za">SELECT count(imie) FROM pracownicy WHERE imie LIKE '%a' AND (dzial=1 or dzial=3)</h2>
+        <h2 class="h2za">SELECT count(imie) as es FROM pracownicy WHERE imie LIKE '%a' AND (dzial=1 or dzial=3)</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("SELECT COUNT(imie) FROM pracownicy WHERE imie LIKE '%a' AND (dzial=1 or dzial=3)");
+                $result=$conn->query("SELECT count(imie) as es FROM pracownicy WHERE imie LIKE '%a' AND (dzial=1 or dzial=3)");
                 echo("<table border=1>");
                     echo("<th>count(imie)</th>");
                         while($row=$result->fetch_assoc()){
