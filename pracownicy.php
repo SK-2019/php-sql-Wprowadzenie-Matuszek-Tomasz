@@ -21,7 +21,23 @@
                 </nav>
               </div>
                <div class="pracow">
-           <h2 class="h2za">Zad.1 - SELECT * FROM pracownicy WHERE dzial=2</h2>
+            <h2 class="h2z1">WSZYSCY PRACOWNICY:</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select * From pracownicy");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+            ?>            
+           <h2 class="h2za">SELECT * FROM pracownicy WHERE dzial=2</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy WHERE dzial=2");
@@ -37,7 +53,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-          <h2 class="h2zb">Zad.2 - SELECT * FROM pracownicy WHERE (dzial=2 OR dzial=3)</h2>
+          <h2 class="h2zb">SELECT * FROM pracownicy WHERE (dzial=2 OR dzial=3)</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("SELECT * FROM pracownicy WHERE (dzial=3 or dzial=2)");
@@ -53,7 +69,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-            <h2 class="h2zc">Zad.3 - SELECT * FROM pracownicy WHERE zarobki<30</h2>
+            <h2 class="h2zc">SELECT * FROM pracownicy WHERE zarobki<30</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy WHERE zarobki<30");
