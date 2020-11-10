@@ -95,7 +95,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-                <h2 class="h2gl">Order By</h2>
+                <h2 class="h2gl">Sortowanie</h2>
             <h2 class="h2ze">SELECT * FROM pracownicy, organizacja WHERE dzial=id_org ORDER BY imie desc</h2>
         <?php
                 require_once("connect.php");
