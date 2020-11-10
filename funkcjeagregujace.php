@@ -26,6 +26,7 @@
                     </div>
                 </nav>
                 <div class="pracow">
+                    <h2 class="h2gl">Funkcje</h2>
                 <h2 class="h2za">SELECT sum(zarobki) as es FROM pracownicy</h2>
         <?php
                 require_once("connect.php");
