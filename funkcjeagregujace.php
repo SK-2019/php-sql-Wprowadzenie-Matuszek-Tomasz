@@ -134,7 +134,8 @@
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
                             echo("<td>".$row["es"]."</td><td>".$row["nazwa_dzial"]."</td>");
-                            echo("</tr>");}
+                            echo("</tr>");
+                        }
                 echo("</table>");
         ?>                    
                </div>
