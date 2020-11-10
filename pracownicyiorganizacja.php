@@ -219,7 +219,7 @@
                   <h2 class="h2zl">SELECT * FROM pracownicy, organizacja WHERE dzial=id_org AND (dzial=2 or dzial=4) OR imie not like "%a" ORDER BY zarobki desc limit 3</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("SELECT * FROM pracownicy, organizacja WHERE dzial=id_org AND (dzial=2 or dzial=4) OR imie not like "%a" ORDER BY zarobki desc limit 3");
+                $result=$conn->query("SELECT * FROM pracownicy, organizacja WHERE dzial=id_org AND (dzial=2 or dzial=4) OR imie not like '%a' ORDER BY zarobki desc limit 3");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
                     echo("<th>Imie</th>");
