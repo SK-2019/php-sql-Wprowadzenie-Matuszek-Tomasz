@@ -100,8 +100,8 @@
                             echo("</tr>");}
                 echo("</table>");
           ?>
+                  <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
               </div>
-              <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
            </div>
        </header>
     </body>
