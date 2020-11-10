@@ -233,7 +233,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?> 
-                  <h2 class="h2zm">PRACOWNICY * FROM pracownicy, organizacja WHERE dzial=id_org ORDER BY data_urodzenia asc limit 1</h2>
+                  <h2 class="h2zm">SELECT * FROM pracownicy, organizacja WHERE dzial=id_org ORDER BY data_urodzenia asc limit 1</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org order by data_urodzenia asc limit 1");
