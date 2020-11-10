@@ -25,6 +25,7 @@
             <a class="nav3" href="funkcjeagregujace.php">Data i Czas</a>
                     </div>
                 </nav>
+               <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
            </div>
       </body>
 </html>
