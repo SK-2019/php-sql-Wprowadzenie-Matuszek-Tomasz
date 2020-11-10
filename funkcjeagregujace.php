@@ -123,7 +123,20 @@
                             echo("</tr>");}
                 echo("</table>");
         ?>                    
-             <h2 class="h2gl">GROUP BY</h2>       
+             <h2 class="h2gl">GROUP BY</h2>
+        <h2 class="h2za">SELECT sum(zarobki),nazwa_dzial FROM pracownicy,organizacja WHERE dzial = id_org GROUP BY dzial</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("SELECT sum(zarobki),nazwa_dzial FROM pracownicy,organizacja WHERE dzial = id_org GROUP BY dzial");
+                echo("<table border=1>");
+                    echo("<th>sum(zarobki)</th>");
+                    echo("<th>nazwa_dzial</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["es"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>                    
                </div>
              <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
            </div>
