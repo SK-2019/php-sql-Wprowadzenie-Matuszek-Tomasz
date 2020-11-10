@@ -86,6 +86,7 @@
                 echo("</table>");
             ?>
                 </div>
+               <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
            </div>
       </body>
 </html>
