@@ -138,7 +138,7 @@
                         }
                 echo("</table>");
         ?>
-                <h2 class="h2za">Select sum(zarobki) as sz from pracownicy group by dzial</h2>
+                <h2 class="h2za">Select sum.(zarobki) as sz from pracownicy group by dzial</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select sum(zarobki) as sz from pracownicy group by dzial");
