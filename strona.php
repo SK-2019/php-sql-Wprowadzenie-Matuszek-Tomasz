@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 <?php
 
+   
 echo("jesteś na stronie.php");
 echo("<li>imię:".$_POST["imie"]);
 echo("<li>dział:".$_POST["dzial"]);
@@ -16,3 +18,5 @@ echo("<li>data urodzenia:".$_POST["data_"]);
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }
+  $conn->close();
+?>
