@@ -8,6 +8,7 @@
 </head>
 <body>
         <header>
+        <li class="nav_link"><a href="/pracownicy/index.php">Pracownicy</a></li>
                 <div class="git">
             <h3><a href="https://github.com/SK-2019/PHP-SQL-Wprowadzenie-Matuszek-Tomasz">GITHUB</h3>
                 </div>
