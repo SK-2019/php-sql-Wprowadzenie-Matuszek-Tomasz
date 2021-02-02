@@ -1,4 +1,4 @@
-
+<?php include "../pracownicy/strona.php" ?>
 <!DOCTYPE html>
 <html>
 <?php
