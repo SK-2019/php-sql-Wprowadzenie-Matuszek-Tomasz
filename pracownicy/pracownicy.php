@@ -16,9 +16,9 @@
            <div class="navigator">
                  <nav>
             <a class="nav1" href="index.php">Strona główna</a>
-            <a class="nav1 active" href="pracownicy.php">Pracownicy</a>
-            <a class="nav1" href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
-            <a class="nav1" href="funkcjeagregujace.php">Funkcje Agregujące</a>
+            <a class="nav1 active" href="/pracownicy/pracownicy.php">Pracownicy</a>
+            <a class="nav1" href="/pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
+            <a class="nav1" href="/pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
                 </nav>
               </div>
                <div class="pracow">
