@@ -14,7 +14,7 @@
           <div class="tomek">
            <div class="navigator">
                  <nav>
-            <a class="nav1" href="../index.php">Strona główna</a>
+            <a class="nav1" href="index.php">Strona główna</a>
             <a class="nav1 active" href="/pracownicy/pracownicy.php">Pracownicy</a>
             <a class="nav1" href="/pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
             <a class="nav1" href="/pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
@@ -23,7 +23,7 @@
                <div class="pracow">
             <h2 class="h2z1">WSZYSCY PRACOWNICY:</h2>
         <?php
-                require_once("assets/connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
