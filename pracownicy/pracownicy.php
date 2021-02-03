@@ -8,14 +8,13 @@
 </head>
 <body>
         <header>
-        <li class="nav_link"><a href="/pracownicy/pracownicy.php">Pracownicy</a></li>
                 <div class="git">
             <h3><a href="https://github.com/SK-2019/PHP-SQL-Wprowadzenie-Matuszek-Tomasz">GITHUB</h3>
                 </div>
           <div class="tomek">
            <div class="navigator">
                  <nav>
-            <a class="nav1" href="index.php">Strona główna</a>
+            <a class="nav1" href="../index.php">Strona główna</a>
             <a class="nav1 active" href="/pracownicy/pracownicy.php">Pracownicy</a>
             <a class="nav1" href="/pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
             <a class="nav1" href="/pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
