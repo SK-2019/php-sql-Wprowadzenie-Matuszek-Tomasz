@@ -1,4 +1,3 @@
-<?php include "../pracownicy/pracownicyiorganizacja.php" ?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
