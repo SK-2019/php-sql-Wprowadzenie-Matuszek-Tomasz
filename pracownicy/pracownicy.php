@@ -23,7 +23,7 @@
                <div class="pracow">
             <h2 class="h2z1">WSZYSCY PRACOWNICY:</h2>
         <?php
-                require_once("connect.php");
+                require_once("assets/connect.php");
                 $result=$conn->query("Select * From pracownicy");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -39,7 +39,7 @@
             ?>            
            <h2 class="h2za">SELECT * FROM pracownicy WHERE dzial=2</h2>
         <?php
-                require_once("connect.php");
+                require_once("assets/connect.php");
                 $result=$conn->query("Select * From pracownicy WHERE dzial=2");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -55,7 +55,7 @@
             ?>
           <h2 class="h2zb">SELECT * FROM pracownicy WHERE (dzial=2 OR dzial=3)</h2>
         <?php
-                require_once("connect.php");
+                require_once("assets/connect.php");
                 $result=$conn->query("SELECT * FROM pracownicy WHERE (dzial=3 or dzial=2)");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -71,7 +71,7 @@
             ?>
             <h2 class="h2zc">SELECT * FROM pracownicy WHERE zarobki<30</h2>
         <?php
-                require_once("connect.php");
+                require_once("assets/connect.php");
                 $result=$conn->query("Select * From pracownicy WHERE zarobki<30");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
