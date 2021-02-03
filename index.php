@@ -25,7 +25,7 @@
               <div class="pracow">
                 <h2 class="h2za">Zad.1 - Select * From pracownicy where imie like '%a' and dzial between 2 and 4</h2>
             <?php
-                require_once("/assets/connect.php");
+                require_once("assets/connect.php");
                 $result=$conn->query("Select count(imie) as ci, dzial, nazwa_dzial  From pracownicy, organizacja where dzial=id_org group by dzial");
                 echo("<table border=1>");
                     echo("<th>Count(Imie)</th>");
@@ -39,7 +39,7 @@
         ?>
             <h2 class="h2zb">Zad.2 - Select * From pracownicy where imie like '%a' and dzial between 2 and 4</h2>
         <?php
-                require_once("/assets/connect.php");
+                require_once("assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie like '%a' and dzial between 2 and 4");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -56,7 +56,7 @@
             ?>
             <h2 class=h2zc>Zad.3 - Select avg(zarobki), dzial From pracownicy group by dzial</h2>
         <?php
-                require_once("/assets/connect.php");
+                require_once("assets/connect.php");
                 $result=$conn->query("Select avg(zarobki), dzial, nazwa_dzial From pracownicy, organizacja where dzial=id_org group by dzial");
                 echo("<table border=1>");
                     echo("<th>Avg zarobki</th>");
@@ -70,7 +70,7 @@
             ?>
             <h2 class=h2zd>Zad.4 - Select * From pracownicy where imie not like '%a' and zarobki between 15 and 50</h2>
         <?php
-                require_once("/assets/connect.php");
+                require_once("assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie not like '%a' and zarobki between 15 and 50");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -87,7 +87,7 @@
             ?>
               <h2 class=h2ze>Zad.5 - Select * From pracownicy where zarobki>15 and (dzial=1 or dzial=4)</h2>
           <?php
-                require_once("/assets/connect.php");
+                require_once("assets/connect.php");
                 $result=$conn->query("Select * From pracownicy where zarobki>15 and (dzial=1 or dzial=4)");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
