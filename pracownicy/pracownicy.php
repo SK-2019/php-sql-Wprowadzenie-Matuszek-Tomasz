@@ -14,7 +14,7 @@
           <div class="tomek">
            <div class="navigator">
                  <nav>
-            <a class="nav1" href="index.php">Strona główna</a>
+            <a class="nav1" href="../index.php">Strona główna</a>
             <a class="nav1 active" href="/pracownicy/pracownicy.php">Pracownicy</a>
             <a class="nav1" href="/pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
             <a class="nav1" href="/pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
@@ -39,7 +39,7 @@
             ?>            
            <h2 class="h2za">SELECT * FROM pracownicy WHERE dzial=2</h2>
         <?php
-                require_once("assets/connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy WHERE dzial=2");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -55,7 +55,7 @@
             ?>
           <h2 class="h2zb">SELECT * FROM pracownicy WHERE (dzial=2 OR dzial=3)</h2>
         <?php
-                require_once("assets/connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("SELECT * FROM pracownicy WHERE (dzial=3 or dzial=2)");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -71,7 +71,7 @@
             ?>
             <h2 class="h2zc">SELECT * FROM pracownicy WHERE zarobki<30</h2>
         <?php
-                require_once("assets/connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy WHERE zarobki<30");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
