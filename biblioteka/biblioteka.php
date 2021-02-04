@@ -18,19 +18,21 @@
             </div>
             <h2 class="h2tm">Tomasz Matuszek</h2>
               <div class="pracow">
-                  <?php
-            require_once('../assets/connect.php');
-            echo("<h1>Książki i ich autorzy:</h1>");
-            $result=$conn->query("SELECT * FROM BibliotekaTytuł");
-            echo("<h2>Tytuły:</h2>");
-            echo("<li>".$sql);
+        <?php
+        require_once("../assets/connect.php");
+        $result=$conn->query("SELECT * FROM BibliotekaAutor");
+        echo("<table border=1>");
+            echo("<th>ID</th>");
+            echo("<th>Imie</th>");
+            echo("<th>Dzial</th>");
+            echo("<th>Nazwa_dzial</th>");
+            echo("<th>Zarobki</th>");
+            echo("<th>Data_Urodzenia</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                    echo("<td>".$row["id_autor"]."</td><td>".$row["Autor"]."</td>");
+                    echo("</tr>");}
         echo("</table>");
-        $result = $conn->query($sql);
-        echo("<select name='title' id='title'>");
-  while($row=$result->fetch_assoc()){ 
-  echo("<option value=".$row['id'].">".$row['tytul']."</option>");
-          }
-      echo("</select>");
             ?>
             </div>
     </header>
