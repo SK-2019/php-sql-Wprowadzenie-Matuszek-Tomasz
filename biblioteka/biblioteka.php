@@ -20,7 +20,7 @@
               <div class="pracow">
                   <?php
             require_once("../assets/connect.php");
-            $result=$conn->query('SELECT * FROM biblAutor');
+            $result=$conn->query('SELECT * FROM bibliotekaAutor');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
         echo("<th>AUTOR</th>");
