@@ -19,7 +19,7 @@
             <h2 class="h2tm">Tomasz Matuszek</h2>
               <div class="pracow">
                   <?php
-              $conn= new mysqli("remotemysql.com","uAryroT03t","gOUYLSNMoE","uAryroT03t");
+            require_once("../assets/connect.php");
             $result=$conn->query('SELECT * FROM biblAutor');
         echo("<table style='margin-left: 5%;' border=2>");
         echo("<th>ID</th>");
