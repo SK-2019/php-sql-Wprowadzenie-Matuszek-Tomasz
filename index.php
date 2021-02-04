@@ -14,7 +14,7 @@
           <div class="tomek">
            <div class="navigator">
                  <nav>
-                    <a class="nav1" href="/biblioteka/biblioteka.php">Biblioteka</a>
+                    <a class="nav1" href="/biblioteka/biblioteka.php">Biblioteka</a>\
             <a class="nav1 active" href="index.php">Strona główna</a>
             <a class="nav1" href="/pracownicy/pracownicy.php">Pracownicy</a>
             <a class="nav1" href="/pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
