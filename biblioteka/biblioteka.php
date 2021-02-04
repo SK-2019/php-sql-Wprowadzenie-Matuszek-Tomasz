@@ -33,7 +33,6 @@
       echo("</select>");
             ?>
             </div>
-        </div>
     </header>
 </body>
 </html>
