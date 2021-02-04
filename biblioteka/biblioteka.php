@@ -21,7 +21,7 @@
                   <?php
             require_once('../assets/connect.php');
             echo("<h1>Książki i ich autorzy:</h1>");
-            $sql = 'SELECT * FROM bibliotekaTytuł';
+            $result=$conn->query("SELECT * FROM BibliotekaTytuł");
             echo("<h2>Tytuły:</h2>");
             echo("<li>".$sql);
         echo("</table>");
