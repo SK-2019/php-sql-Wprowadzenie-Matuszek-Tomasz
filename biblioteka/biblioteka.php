@@ -21,14 +21,19 @@
                   <?php
             require_once("../assets/connect.php");
             $result=$conn->query('SELECT * FROM bibliotekaAutor');
-            echo("<table style='margin-left: 5%;' border=2>");
-            echo("<th>ID</th>");
-            echo("<th>AUTOR</th>");
-                while($row=$result->fetch_assoc()){
-                    echo("<tr>");
-                        echo("<td>" .$row["id"]. "</td><td>" .$row["autor"]. "</td>");
-                    echo("</tr>");
-                }
+            echo("<table style='margin:auto; width:70%'>");
+            echo("<caption>");
+            echo("<div class='div1'>$nazwa</div>");
+            echo("<div class='zapytanie'>($sql)</div>");
+            echo("</caption>");
+                echo("<th>ID</th>");
+                echo("<th>Autor</th>");
+                echo("<th>Tytuł</th>");
+                    while($row=$result->fetch_assoc()){
+                        echo("<tr>");
+                        echo("<td>".$row['IDAutor']."</td><td>".$row['Autor']."</td><td>".$row['Tytul']."</td>");
+                        echo("</tr>");
+                    }
         echo("</table>");
             ?>
             
