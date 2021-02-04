@@ -42,6 +42,24 @@
         echo("<input type='submit' value='Wypożycz'>'");
         echo("</form>");
           ?>
+          <?php
+  $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytul WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
+  echo("<p>Wyświetlenie pełnej bazy danych w blibiotece</h1>");
+  
+  $result=$conn->query($sql);
+  echo("<table>");
+  echo("<th>id</th>");
+  echo("<th>Autor</th>");
+  echo("<th>Tytuł</th>");
+  while($row=$result->fetch_assoc())
+  {
+      echo("<tr>");
+      echo("<td>".$row["id"]."</td><td>".$row["Autor"]."</td><td>".$row["Tytuł"]);
+      echo("</tr>");
+  }
+  echo("</table>");
+  ?>
+
             </div>
         </div>
     </header>
