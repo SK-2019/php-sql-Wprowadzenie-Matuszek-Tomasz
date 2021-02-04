@@ -20,15 +20,21 @@
               <div class="pracow">
         <?php
         require_once("../assets/connect.php");
-        $result=$conn->query("SELECT * FROM BibliotekaAutor");
-        echo("<table border=1>");
-            echo("<th>ID</th>");
-            echo("<th>Autor</th>");
-                while($row=$result->fetch_assoc()){
-                    echo("<tr>");
-                    echo("<td>".$row["id_autor"]."</td><td>".$row["Autor"]."</td>");
-                    echo("</tr>");}
-        echo("</table>");
+  $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytul WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
+  echo("<p>Wyświetlenie pełnej bazy danych w blibiotece</h1>");
+  
+  $result=$conn->query($sql);
+  echo("<table>");
+  echo("<th>id</th>");
+  echo("<th>Autor</th>");
+  echo("<th>Tytuł</th>");
+  while($row=$result->fetch_assoc())
+  {
+      echo("<tr>");
+      echo("<td>".$row["id"]."</td><td>".$row["Autor"]."</td><td>".$row["Tytuł"]);
+      echo("</tr>");
+  }
+  echo("</table>");
             ?>
             </div>
     </header>
