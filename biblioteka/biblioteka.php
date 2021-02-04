@@ -23,11 +23,7 @@
         $result=$conn->query("SELECT * FROM BibliotekaAutor");
         echo("<table border=1>");
             echo("<th>ID</th>");
-            echo("<th>Imie</th>");
-            echo("<th>Dzial</th>");
-            echo("<th>Nazwa_dzial</th>");
-            echo("<th>Zarobki</th>");
-            echo("<th>Data_Urodzenia</th>");
+            echo("<th>Autor</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
                     echo("<td>".$row["id_autor"]."</td><td>".$row["Autor"]."</td>");
