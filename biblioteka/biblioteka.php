@@ -19,17 +19,11 @@
             <h2 class="h2tm">Tomasz Matuszek</h2>
               <div class="pracow">
                   <?php
-            require_once("../assets/connect.php");
-            $result=$conn->query('SELECT * FROM bibliotekaAutor');
-            echo("<table style='margin:auto; width:70%'>");
-                echo("<th>ID</th>");
-                echo("<th>Autor</th>");
-                echo("<th>Tytuł</th>");
-                    while($row=$result->fetch_assoc()){
-                        echo("<tr>");
-                        echo("<td>".$row['IDAutor']."</td><td>".$row['Autor']."</td><td>".$row['Tytul']."</td>");
-                        echo("</tr>");
-                    }
+            require_once('../assets/connect.php');
+            echo("<h1>Książki i ich autorzy:</h1>");
+            $sql = 'SELECT * FROM bibliotekaTytuł';
+            echo("<h2>Tytuły:</h2>");
+            echo("<li>".$sql);
         echo("</table>");
             ?>
             </div>
