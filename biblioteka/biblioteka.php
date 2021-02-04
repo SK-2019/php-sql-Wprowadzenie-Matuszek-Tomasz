@@ -22,10 +22,6 @@
             require_once("../assets/connect.php");
             $result=$conn->query('SELECT * FROM bibliotekaAutor');
             echo("<table style='margin:auto; width:70%'>");
-            echo("<caption>");
-            echo("<div class='div1'>$nazwa</div>");
-            echo("<div class='zapytanie'>($sql)</div>");
-            echo("</caption>");
                 echo("<th>ID</th>");
                 echo("<th>Autor</th>");
                 echo("<th>Tytuł</th>");
