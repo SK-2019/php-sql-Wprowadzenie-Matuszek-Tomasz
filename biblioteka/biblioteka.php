@@ -14,7 +14,7 @@
           <div class="tomek">
            <div class="navigator">
                  <nav>
-            <a class="nav1 active" href="index.php">Strona główna</a>
+            <a class="nav1 active" href="../index.php">Strona główna</a>
             </div>
             <h2 class="h2tm">Tomasz Matuszek</h2>
               <div class="pracow">
