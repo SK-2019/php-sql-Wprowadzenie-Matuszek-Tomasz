@@ -19,7 +19,7 @@
             <a class="nav1" href="/pracownicy/pracownicy.php">Pracownicy</a>
             <a class="nav1" href="/pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
             <a class="nav1" href="/pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
-            <a class="nav1" href="/pracownicy/formularz.html">Formularz</a>
+            <a class="nav1" href="/pracownicy/formularz.html">Inne</a>
                 </nav>
            </div>
             <h2 class="h2tm">Tomasz Matuszek</h2>
