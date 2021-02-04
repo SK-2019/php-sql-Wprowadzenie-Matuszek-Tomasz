@@ -45,7 +45,7 @@
           <?php
           require_once("../assets/connect.php");
   $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytul WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
-  echo("<p>Wyświetlenie pełnej bazy danych w blibiotece</h1>");
+  echo("</h1>Wyświetlenie pełnej bazy danych w blibiotece</h1>");
   
   $result=$conn->query($sql);
   echo("<table>");
