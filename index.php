@@ -23,6 +23,13 @@
             <a class="nav1" href="/pracownicy/formularz.html">Formularz</a>
                 </nav>
            </div>
+           <?php
+        $hostname = $_SERVER['HTTP_HOST'];
+
+        if ($hostname == '127.0.0.1'){
+            require_once("assets/config.php");   }
+            echo("<li> SERVER password: ".$_SERVER['pass']);
+            ?>
             <h2 class="h2tm">Tomasz Matuszek</h2>
               <div class="pracow">
                 <h2 class="h2za">Zad.1 - Select * From pracownicy where imie like '%a' and dzial between 2 and 4</h2>
