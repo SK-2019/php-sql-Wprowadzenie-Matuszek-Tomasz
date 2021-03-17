@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-1
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP - Matuszek</title>
@@ -33,6 +32,7 @@
             ?>
             <h2 class="h2tm">Tomasz Matuszek</h2>
               <div class="pracow">
+            <h1>Pokazanie commita na stronie github</h1>
                 <h2 class="h2za">Zad.1 - Select * From pracownicy where imie like '%a' and dzial between 2 and 4</h2>
             <?php
                 require_once("assets/connect.php");
