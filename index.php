@@ -35,6 +35,9 @@
             <h1>Pokazanie commita na stronie github</h1>
                 <h2 class="h2za">Zad.1 - Select * From pracownicy where imie like '%a' and dzial between 2 and 4</h2>
             <?php
+                    echo("<h1>Godzina i data</h1>");
+                    $d=strtotime("now");
+                    echo"<li>".date("Y-m-d h:i:sa",$d)."<br>"; 
                 require_once("assets/connect.php");
                 $result=$conn->query("Select count(imie) as ci, dzial, nazwa_dzial  From pracownicy, organizacja where dzial=id_org group by dzial");
                 echo("<table border=1>");
