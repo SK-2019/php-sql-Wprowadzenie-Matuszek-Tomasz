@@ -11,43 +11,55 @@
     <div class="con">
     <h4>zad.1</h4>
         <div class="poz aa">
-            <div class="pros">
+            <div class="ebe">
                 <div class="menu">
+                    <a class="kwiaty" href>Chodz</a>
+                    <a class="kwiaty" href>Do</a>
+                    <a class="kwiaty" href>Tanca</a>
                 </div>
             </div>
         </div>
         <h4>zad.2</h4>
         <div class="poz ba">
-            <div class="pros">
+            <div class="ebe">
                 <div class="menu">
+                <a class="kwiaty1" href>Strona</a>
+                    <a class="kwiaty1" href>Główna</a>
+                    <a class="kwiaty1" href>Animowana</a>
                 </div>
             </div>
         </div>
         <h4>zad.3</h4>
         <div class="poz ca">
-            <div class="pros">
-                <div class="menub">
+            <div class="ebe">
+                <div class="menu2">
+                <a class="kwiaty2" href>Parostatkiem</a>
+                    <a class="kwiaty2" href>W</a>
+                    <a class="kwiaty2" href>Rejs</a>
                 </div>
             </div>
         </div>
         <h4>zad.4</h4>
         <div class="poz da">
-            <div class="pros">
-                <div class="menub">
+            <div class="ebe">
+                <div class="menu2">
+                <a class="kwiaty3" href>Kiedys</a>
+                    <a class="kwiaty3" href>To</a>
+                    <a class="kwiaty3" href>Bylo</a>
                 </div>
             </div>
         </div>
         <h4>zad.5</h4>
         <div class="poz ea">
-            <div class="pros"></div>
+            <div class="ebe"></div>
         </div>
         <h4>zad.6</h4>
         <div class="poz fa">
-            <div class="pros"></div>
+            <div class="ebe"></div>
         </div>
         <h4>zad.7</h4>
         <div class="poz ga">
-            <div class="pros"></div>
+            <div class="ebe"></div>
         </div>
         <h4>zad.8</h4>
         <div class="poz ha">
