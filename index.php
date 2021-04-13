@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP - Matuszek</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
         <header>
@@ -16,11 +16,11 @@
                  <nav>
                     
             <a class="nav1 active" href="index.php">Strona główna</a>
-            <a class="nav1" href="/pracownicy/pracownicy.php">Pracownicy</a>
-            <a class="nav1" href="/pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
-            <a class="nav1" href="/pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
-            <a class="nav1" href="/biblioteka/biblioteka.php">Biblioteka</a>
-            <a class="nav1" href="/pracownicy/formularz.html">Formularz</a>
+            <a class="nav1" href="pracownicy/pracownicy.php">Pracownicy</a>
+            <a class="nav1" href="pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
+            <a class="nav1" href="pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
+            <a class="nav1" href="biblioteka/biblioteka.php">Biblioteka</a>
+            <a class="nav1" href="pracownicy/formularz.html">Formularz</a>
                 </nav>
            </div>
            <?php
