@@ -64,13 +64,12 @@
                 $result=$conn->query("SELECT *, pacjenci_lekarze.id as lepa from pacjenci,lekarze,pacjenci_lekarze WHERE id_pacjenci=pacjenci_id AND id_lekarze=lekarze_id");
                 echo("<h2>SELECT * from pacjenci,lekarze, pacjenci_lekarze WHERE id_pacjenci=pacjenci AND id_lekarze=lekarze_id</h2>");
                 echo("<table border=1>");
-                    echo("<th>nr.</th>");
                     echo("<th>pacjenci</th>");
                     echo("<th>lekarze</th>");
                     echo("<th>delete</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
-                            echo("<td>".$row["id"]."</td><td>".$row["pacjenci"]."</td><td>".$row["lekarze"]."</td>");
+                            echo("<td>".$row["pacjenci"]."</td><td>".$row["lekarze"]."</td>");
                             echo("<td><form action='del6biblioteka.php' method=POST><input type='hidden' name='id' value='".$row["lepa"]."'>");
                             echo("<input type='submit' value='DELETE'>");
                             echo("</form></td>");

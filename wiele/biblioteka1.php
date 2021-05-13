@@ -11,6 +11,7 @@
                 <div class="git">
             <h3><a href="https://github.com/SK-2019/PHP-SQL-Wprowadzenie-Matuszek-Tomasz">GITHUB</h3>
                 </div>
+
           <div class="tomek">
            <div class="navigator">
                  <nav>
@@ -22,6 +23,7 @@
             <a class="nav1" href="../wiele/sklep1.php">Sklep</a>
                 </nav>
               </div>
+              <div class="obramowanie">
               <div class="pracow">
 <?php
                 require_once("../assets/connect.php");
@@ -80,7 +82,7 @@
                             echo("</tr>");}
                 echo("</table>");
         ?>
-                </div>
+              </div>  
                <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
            </div>
       </body>
