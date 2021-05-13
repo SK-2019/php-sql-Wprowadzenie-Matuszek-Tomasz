@@ -14,7 +14,7 @@
           <div class="tomek">
            <div class="navigator">
                  <nav>
-            <a class="nav1" href="../index.php">Strona główna</a>
+            <a class="nav1 active" href="../index.php">Strona główna</a>
             <a class="nav1" href="../wiele/biblioteka1.php">Biblioteka</a>
             <a class="nav1" href="../wiele/serwis1.php">Serwis Samochodowy</a>
             <a class="nav1" href="../wiele/szkola1.php">Szkoła</a>
@@ -22,6 +22,10 @@
             <a class="nav1" href="../wiele/sklep1.php">Sklep</a>
                 </nav>
               </div>
+              <div class="pracow">
+              <h1>***</h1>
+              <h1>ZADANIE WIELE-DO-WIELU (PRZYKŁADY W ZAKŁADKACH U GÓRY)</h1>
+              <h1>***</h1>
                 </div>
                <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
            </div>

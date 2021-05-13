@@ -23,7 +23,48 @@
                 </nav>
               </div>
 
+              <div class="pracow">
+<?php
+                require_once("../assets/connect.php");
+                $result=$conn->query("SELECT * from producent");
+                echo("<h2>SELECT * from producent</h2>");
+                echo("<table border=1>");
+                    echo("<th>nr.</th>");
+                    echo("<th>producent</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_producent"]."</td><td>".$row["producent"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>
 
+        <?php
+                require_once("../assets/connect.php");
+                $result=$conn->query("SELECT * from produkt");
+                echo("<h2>SELECT * from produkt</h2>");
+                echo("<table border=1>");
+                    echo("<th>nr.</th>");
+                    echo("<th>produkt(model)</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_produkt"]."</td><td>".$row["produkt"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>
+
+<?php
+                require_once("../assets/connect.php");
+                $result=$conn->query("SELECT * from producent,produkt,producent_produkt WHERE id_producent=producent_id AND id_produkt=produkt_id");
+                echo("<h2>SELECT * from producent,produkt,producent_produkt WHERE id_producent=producent_id AND id_produkt=produkt_id</h2>");
+                echo("<table border=1>");
+                echo("<th>producent</th>");
+                echo("<th>produkt</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["producent"]."</td><td>".$row["produkt"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>
 
 
                 </div>
