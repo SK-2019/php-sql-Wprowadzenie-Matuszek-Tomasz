@@ -19,6 +19,7 @@
             <a class="nav1" href="pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
             <a class="nav1" href="pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
             <a class="nav1" href="../Cwiczenia/index.php">Cwiczenia</a>
+            <a class="nav1" href="../wiele/wieledowielu.php">Wiele do wielu</a>
                 </nav>
               </div>
                <div class="pracow">
