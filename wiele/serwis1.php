@@ -31,9 +31,13 @@
                 echo("<table border=1>");
                     echo("<th>nr.</th>");
                     echo("<th>rejestracja</th>");
+                    echo("<th>delete</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
                             echo("<td>".$row["id_rejestracja"]."</td><td>".$row["rejestracja"]."</td>");
+                            echo("<td><form action='del7biblioteka.php' method=POST><input type='hidden' name='id' value='".$row["id_rejestracja"]."'>");
+                            echo("<input type='submit' value='DELETE'>");
+                            echo("</form></td>");
                             echo("</tr>");}
                 echo("</table>");
         ?>
@@ -45,23 +49,32 @@
                 echo("<table border=1>");
                     echo("<th>nr.</th>");
                     echo("<th>mechanik</th>");
+                    echo("<th>delete</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
                             echo("<td>".$row["id_mechanik"]."</td><td>".$row["mechanik"]."</td>");
+                            echo("<td><form action='del8biblioteka.php' method=POST><input type='hidden' name='id' value='".$row["id_mechanik"]."'>");
+                            echo("<input type='submit' value='DELETE'>");
+                            echo("</form></td>");
                             echo("</tr>");}
                 echo("</table>");
         ?>
 
 <?php
                 require_once("../assets/connect.php");
-                $result=$conn->query("SELECT * from rejestracja, mechanik, rejestracja_mechanik WHERE id_mechanik=mechanik_id AND id_rejestracja=rejestracja_id");
+                $result=$conn->query("SELECT *, rejestracja_mechanik.id as rema from rejestracja, mechanik, rejestracja_mechanik WHERE id_mechanik=mechanik_id AND id_rejestracja=rejestracja_id");
                 echo("<h2>SELECT * from rejestracja,mechanik,rejestracja_mechanik WHERE id_rejestracja=rejestracja_id AND id_mechanik=mechanik_id</h2>");
                 echo("<table border=1>");
                 echo("<th>rejestracja</th>");
                 echo("<th>mechanik</th>");
+                echo("<th>delete</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
                             echo("<td>".$row["rejestracja"]."</td><td>".$row["mechanik"]."</td>");
+                            echo("<td><form action='del9biblioteka.php' method=POST><input type='hidden' name='id' value='".$row["rema"]."'>");
+                            echo("<input type='submit' value='DELETE'>");
+                            echo("</form></td>");
+                            echo("</tr>");
                             echo("</tr>");}
                 echo("</table>");
         ?>

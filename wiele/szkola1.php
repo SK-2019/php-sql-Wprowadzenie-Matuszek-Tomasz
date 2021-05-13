@@ -30,9 +30,13 @@
                 echo("<table border=1>");
                     echo("<th>nr.</th>");
                     echo("<th>klasa</th>");
+                    echo("<th>delete</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
                             echo("<td>".$row["id_klasa"]."</td><td>".$row["klasa"]."</td>");
+                            echo("<td><form action='del13biblioteka.php' method=POST><input type='hidden' name='id' value='".$row["id_klasa"]."'>");
+                            echo("<input type='submit' value='DELETE'>");
+                            echo("</form></td>");
                             echo("</tr>");}
                 echo("</table>");
         ?>
@@ -44,23 +48,31 @@
                 echo("<table border=1>");
                     echo("<th>nr.</th>");
                     echo("<th>nauczyciel</th>");
+                    echo("<th>delete</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
                             echo("<td>".$row["id_nauczyciel"]."</td><td>".$row["nauczyciel"]."</td>");
+                            echo("<td><form action='del14biblioteka.php' method=POST><input type='hidden' name='id' value='".$row["id_nauczyciel"]."'>");
+                            echo("<input type='submit' value='DELETE'>");
+                            echo("</form></td>");
                             echo("</tr>");}
                 echo("</table>");
         ?>
 
 <?php
                 require_once("../assets/connect.php");
-                $result=$conn->query("SELECT * from klasa,nauczyciel,klasa_nauczyciel WHERE id_klasa=klasa_id AND id_nauczyciel=nauczyciel_id");
+                $result=$conn->query("SELECT *,klasa_nauczyciel.id as klana from klasa,nauczyciel,klasa_nauczyciel WHERE id_klasa=klasa_id AND id_nauczyciel=nauczyciel_id");
                 echo("<h2>SELECT * from klasa,nauczyciel,klasa_nauczyciel WHERE id_klasa=klasa_id AND id_nauczyciel=nauczyciel_id</h2>");
                 echo("<table border=1>");
                 echo("<th>klasa</th>");
                 echo("<th>nauczyciel</th>");
+                echo("<th>delete</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
                             echo("<td>".$row["klasa"]."</td><td>".$row["nauczyciel"]."</td>");
+                            echo("<td><form action='del15biblioteka.php' method=POST><input type='hidden' name='id' value='".$row["klana"]."'>");
+                            echo("<input type='submit' value='DELETE'>");
+                            echo("</form></td>");
                             echo("</tr>");}
                 echo("</table>");
         ?>

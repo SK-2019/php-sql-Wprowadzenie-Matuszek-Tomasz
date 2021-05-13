@@ -31,9 +31,13 @@
                     echo("<th>id</th>");
                     echo("<th>imie</th>");
                     echo("<th>nazwisko</th>");
+                    echo("<th>delete</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
                             echo("<td>".$row["id"]."</td><td>".$row["imie"]."</td><td>".$row["nazwisko"]."</td>");
+                            echo("<td><form action='del1biblioteka.php' method=POST><input type='hidden' name='id' value='".$row["id"]."'>");
+                            echo("<input type='submit' value='DELETE'>");
+                            echo("</form></td>");
                             echo("</tr>");}
                 echo("</table>");
         ?>
@@ -45,25 +49,34 @@
                 echo("<table border=1>");
                     echo("<th>id</th>");
                     echo("<th>tytuł</th>");
+                    echo("<th>delete</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
                             echo("<td>".$row["id"]."</td><td>".$row["tytul"]."</td>");
-                            echo("</tr>");}
+                            echo("<td><form action='del2biblioteka.php' method=POST><input type='hidden' name='id' value='".$row["id"]."'>");
+                            echo("<input type='submit' value='DELETE'>");
+                            echo("</form></td>");
+                            echo("</tr>");
+                        }
                 echo("</table>");
         ?>
 
 <?php
                 require_once("../assets/connect.php");
-                $result=$conn->query("SELECT * from autor, tytul, autor_tytul where autor.id=autor_id and tytul.id=tytul_id");
-                echo("<h2>SELECT * from autor, tytul, autor_tytul where autor.id=autor_id and tytul.id=tytul_id</h2>");
+                $result=$conn->query("SELECT *, autor_tytul.id as atid from autor, tytul, autor_tytul where autor.id=autor_id and tytul.id=tytul_id");
+                echo("<h2>SELECT *, autor_tytul.id as atid from autor, tytul, autor_tytul where autor.id=autor_id and tytul.id=tytul_id</h2>");
                 echo("<table border=1>");
                     echo("<th>id</th>");
                     echo("<th>imie</th>");
                     echo("<th>nazwisko</th>");
                     echo("<th>tytuł</th>");
+                    echo("<th>delete</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
-                            echo("<td>".$row["id"]."</td><td>".$row["imie"]."</td><td>".$row["nazwisko"]."</td><td>".$row["tytul"]."</td>");
+                            echo("<td>".$row["atid"]."</td><td>".$row["imie"]."</td><td>".$row["nazwisko"]."</td><td>".$row["tytul"]."</td>");
+                            echo("<td><form action='del3biblioteka.php' method=POST><input type='hidden' name='id' value='".$row["atid"]."'>");
+                            echo("<input type='submit' value='DELETE'>");
+                            echo("</form></td>");
                             echo("</tr>");}
                 echo("</table>");
         ?>
