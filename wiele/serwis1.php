@@ -22,6 +22,50 @@
             <a class="nav1" href="../wiele/sklep1.php">Sklep</a>
                 </nav>
               </div>
+
+              <div class="pracow">
+<?php
+                require_once("../assets/connect.php");
+                $result=$conn->query("SELECT * from rejestracja");
+                echo("<h2>SELECT * from rejestracja</h2>");
+                echo("<table border=1>");
+                    echo("<th>nr.</th>");
+                    echo("<th>rejestracja</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_rejestracja"]."</td><td>".$row["rejestracja"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>
+
+        <?php
+                require_once("../assets/connect.php");
+                $result=$conn->query("SELECT * from mechanik");
+                echo("<h2>SELECT * from mechanik</h2>");
+                echo("<table border=1>");
+                    echo("<th>nr.</th>");
+                    echo("<th>mechanik</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_mechanik"]."</td><td>".$row["mechanik"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>
+
+<?php
+                require_once("../assets/connect.php");
+                $result=$conn->query("SELECT * from rejestracja, mechanik, rejestracja_mechanik WHERE id_mechanik=mechanik_id AND id_rejestracja=rejestracja_id");
+                echo("<h2>SELECT * from rejestracja,mechanik,rejestracja_mechanik WHERE id_rejestracja=rejestracja_id AND id_mechanik=mechanik_id</h2>");
+                echo("<table border=1>");
+                echo("<th>rejestracja</th>");
+                echo("<th>mechanik</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["rejestracja"]."</td><td>".$row["mechanik"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>
+
                 </div>
                <footer>PHP-SQL-Wprowadzenie-Matuszek Tomasz</footer>
            </div>

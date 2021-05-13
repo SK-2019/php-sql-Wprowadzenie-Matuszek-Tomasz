@@ -55,7 +55,7 @@
 <?php
                 require_once("../assets/connect.php");
                 $result=$conn->query("SELECT * from autor, tytul, autor_tytul where autor.id=autor_id and tytul.id=tytul_id");
-                echo("<h2>SELECT * from autor</h2>");
+                echo("<h2>SELECT * from autor, tytul, autor_tytul where autor.id=autor_id and tytul.id=tytul_id</h2>");
                 echo("<table border=1>");
                     echo("<th>id</th>");
                     echo("<th>imie</th>");

@@ -23,9 +23,7 @@
                 </nav>
               </div>
 
-                <?php>
-                    require_once("../assets/connect.php");
-                    $sql=()
+
 
 
                 </div>
